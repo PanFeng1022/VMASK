@@ -1,0 +1,36 @@
+experiment_name: benign_cifar10_500
+data_dir: data
+dataset: cifar10
+model: cifar10_cnn
+results_dir: results/benign_cifar10_500
+download: false
+device: auto
+overwrite: false
+skip_completed: true
+
+seeds: [8207, 9090, 9421, 7515, 4407]
+partitions: [iid, dirichlet]
+dirichlet_alpha: 0.5
+
+num_clients: 20
+participating_clients: 20
+rounds: 500
+local_steps: 20
+batch_size: 64
+local_lr: 0.05
+momentum: 0.9
+server_lr: 0.1
+optimizer: sgd
+
+psi: 256.0
+amax: 15
+modulus: 340282366920938463463374607431768211456
+expected_dimension: 105050
+protocol_execution: true
+protocol_profile: p80
+protocol_committee_size: 5
+protocol_threshold: 3
+
+eval_batch_size: 512
+num_workers: 0
+final_window: 10

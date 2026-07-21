@@ -1,0 +1,14 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+numpy==1.23.5
+pandas==1.2.4
+PyYAML
+Pillow
+galois
+
+# PyTorch versions used for the experiments.
+torch==1.7.1+cu110
+torchvision==0.8.2+cu110
+
+# Matplotlib version used to generate the reported figures.
+matplotlib==3.8.4
