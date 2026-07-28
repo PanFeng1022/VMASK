@@ -1,0 +1,37 @@
+experiment_name: amm_mnist_arithmetic_mismatch
+data_dir: data
+dataset: mnist
+model: mnist_cnn
+results_dir: results/amm_mnist_arithmetic_mismatch
+download: false
+device: auto
+overwrite: false
+
+seeds: [8207, 9090, 9421, 7515, 4407]
+malicious_ratios: [0.10, 0.20, 0.30]
+partition: iid
+dirichlet_alpha: 0.5
+
+num_clients: 20
+rounds: 300
+local_steps: 20
+batch_size: 64
+local_lr: 0.05
+momentum: 0.9
+server_lr: 0.1
+
+psi: 256.0
+amax: 15
+modulus: 340282366920938463463374607431768211456
+expected_dimension: 27562
+r0: 1023
+mask_limbs: 10
+protocol_execution: true
+protocol_profile: p80
+protocol_committee_size: 5
+protocol_threshold: 3
+attack_vector_seed: 20260617
+attack_limb0_abs: 16
+
+eval_batch_size: 512
+num_workers: 0
