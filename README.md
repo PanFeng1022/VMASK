@@ -1,5 +1,9 @@
 # VMASK Experiments and Results
 
+Official implementation for our work.
+The paper is currently under review at IEEE Transactions on Information Forensics and Security (TIFS).
+The code will continue to be revised before final acceptance.
+
 This repository provides the source code, experimental configurations, scripts,
 and results used in the evaluation of VMASK.
 
