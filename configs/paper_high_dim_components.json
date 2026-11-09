@@ -1,0 +1,17 @@
+{
+  "classification": "native preparation and recovery component measurements",
+  "profiles": ["P80", "P100"],
+  "dimensions": [1000, 5000, 10000, 27562, 50000, 105050],
+  "roles": ["client", "pipeline"],
+  "repetitions": [1, 2, 3],
+  "clear_constraint_check": {
+    "dimension": 1000,
+    "roles": ["constraint"],
+    "profiles": ["P80", "P100"],
+    "repetitions": [1, 2, 3]
+  },
+  "contributors": 20,
+  "committee_size": 5,
+  "threshold": 3,
+  "kappa": 14
+}

@@ -1,0 +1,38 @@
+{
+  "classification": "complete native Threshold SNIP local execution; no network transport",
+  "profiles": ["P80", "P100"],
+  "dimension_sweep": {
+    "dimensions": [100, 200, 300, 500, 800, 1000, 1500, 2000],
+    "clients": 2,
+    "max_clients": 20,
+    "committee_size": 5,
+    "threshold": 3,
+    "kappa": 2
+  },
+  "client_sweep": {
+    "dimension": 100,
+    "clients": [2, 5, 8, 10, 12, 15, 20],
+    "max_clients": 20,
+    "committee_size": 5,
+    "threshold": 3,
+    "kappa": 2
+  },
+  "committee_size_sweep": {
+    "dimension": 100,
+    "clients": 2,
+    "max_clients": 20,
+    "committee_sizes": [3, 5, 7],
+    "threshold": 3,
+    "kappa": 2
+  },
+  "threshold_sweep": {
+    "dimension": 100,
+    "clients": 2,
+    "max_clients": 20,
+    "committee_size": 5,
+    "thresholds": [2, 3, 4],
+    "kappa": 2
+  },
+  "repetitions": 3,
+  "warmups": 1
+}

@@ -1,0 +1,6 @@
+numpy==1.26.4
+pandas==2.2.2
+PyYAML==6.0.2
+Pillow==10.4.0
+python-flint==0.8.0
+psutil==5.9.0

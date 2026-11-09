@@ -1,0 +1,11 @@
+{
+  "classification": "exact analytical application-format payload; not network measurement",
+  "dimensions": [100, 1000, 10000, 27562, 100000, 105050, 1000000],
+  "clients": 20,
+  "committee_size": 5,
+  "thresholds": [2, 3, 4],
+  "identity_bits": 256,
+  "ring_element_bytes": 16,
+  "field_element_bytes": 24,
+  "lightsecagg": {"N": 20, "U": 14, "T": 2, "element_bytes": 4}
+}

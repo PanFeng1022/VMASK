@@ -1,0 +1,25 @@
+{
+  "classification": "native protocol under controlled local fault injection",
+  "profile": "P80",
+  "dimension": 100,
+  "clients": 20,
+  "max_clients": 20,
+  "committee_size": 5,
+  "threshold": 3,
+  "kappa": 14,
+  "verification_ids": [44, 11, 33],
+  "cases": [
+    "A3_before",
+    "A3_reorder",
+    "A3_late6",
+    "A3_late7",
+    "B1_nonselected",
+    "B2_precheck",
+    "B3_residual",
+    "B4_recovery",
+    "C_absent6",
+    "C_absent7"
+  ],
+  "repetitions": 3,
+  "deadline_owner": "experiment harness, not the VMASK protocol"
+}
