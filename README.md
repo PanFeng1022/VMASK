@@ -1,28 +1,32 @@
-
 # VMASK
 
-Implementation of VMASK, a verifiable secure aggregation protocol for federated learning. The corresponding paper is under review at IEEE Transactions on Information Forensics and Security (TIFS).
+This repository provides the research implementation and evaluation artifact for VMASK. It includes protocol components, federated learning workflows, experiment configurations, benchmark utilities, and validation tests.
 
-## Repository Contents
+## Repository Structure
 
-- `src/vmask_exp/`: Protocol and federated learning implementations.
-- `scripts/`: Scripts for experiments, benchmarks, and result analysis.
-- `configs/`: Experimental configuration files.
-- `tests/`: Protocol and regression tests.
+- `src/vmask_exp/`: Core protocol and federated learning components.
+- `scripts/`: Experiment, benchmark, and analysis utilities.
+- `configs/`: Experiment and benchmark configurations.
+- `tests/`: Protocol-level and regression tests.
 - `requirements.txt`: Python dependencies.
-- `pyproject.toml`: Project configuration and package metadata.
+- `pyproject.toml`: Package and build configuration.
 
-## Installation
+## Setup
 
-Requires Python 3.11.
+Create an isolated Python environment and install a PyTorch build compatible with the target platform. Then install the remaining dependencies and the VMASK package:
 
 ```bash
-python -m pip install torch==2.2.2 torchvision==0.17.2 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
 
-## Tests
+## Usage
+
+Experiment and benchmark settings are provided in `configs/`. The corresponding entry points are available in `scripts/`.
+
+## Validation
+
+Run the test suite from the repository root:
 
 ```bash
 python -m unittest discover -s tests -v
