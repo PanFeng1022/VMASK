@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "vmask-exp"
 version = "0.1.0"
 description = "VMASK protocol and IEEE TIFS evaluation artifact"
+# Artifact packaging target for python-flint 0.8.0; experimental versions are reported in the paper.
 requires-python = ">=3.11,<3.12"
 
 [tool.setuptools.packages.find]
